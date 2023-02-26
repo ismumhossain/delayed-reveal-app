@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 const All: NextPage = () => {
   const {contract} = useContract (
-    "0xF713659BeDA87Ab02414e010f6980AC414e8e58F"
+    "0x22aCFfFF4B5A01EA8FA12D64814F9843324Cd743"
   )
   const address = useAddress()
 
