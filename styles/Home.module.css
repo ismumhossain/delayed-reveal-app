@@ -11,8 +11,21 @@
 
 .cardcontainer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardrow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.card {
+  max-width: 20%;
+  margin: 10px;
+  text-align: center;
 }
 
 
