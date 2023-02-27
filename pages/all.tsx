@@ -6,24 +6,12 @@ const All: NextPage = () => {
   const { contract } = useContract("0x22aCFfFF4B5A01EA8FA12D64814F9843324Cd743");
   const { data: nfts } = useNFTs(contract);
 
-  const nftsInRows = [];
-  const rowSize = 5;
-
-  if (!nfts) {
-    return <div>Loading...</div>;
-  }
-
-  for (let i = 0; i < nfts.length; i += rowSize) {
-    nftsInRows.push(nfts.slice(i, i + rowSize));
-  }
-
   return (
     <div>
-      {nftsInRows.map((row, rowIndex) => (
-        <div key={rowIndex} className={styles.cardcontainer}>
-          {row.map((nft) => (
+        <div className={styles.cardcontainer}>
+          {nfts?.map((nft) => (
             <div className={styles.card} key={nft.metadata.id.toString()}>
-              <ThirdwebNftMedia metadata={nft.metadata} />
+              <ThirdwebNftMedia className={styles.media}metadata={nft.metadata} />
               <h2>{nft.metadata.name}</h2>
               <h4>{nft.metadata.description}</h4>
               <div className={styles.buttoncontainer}>
@@ -42,7 +30,6 @@ const All: NextPage = () => {
             </div>
           ))}
         </div>
-      ))}
     </div>
   );
 };
