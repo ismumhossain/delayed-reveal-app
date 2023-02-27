@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 
 export default function BoxSx() {
   return (
-    <Box>
+    <Box >
       <Box
         sx={{
           height: '70vh',
@@ -28,7 +28,7 @@ export default function BoxSx() {
           }}
         >
           <Typography variant="h4" component="h1" sx={{ color: 'black' }}>
-            Welcome to the delay universe
+            Welcome to the NFT universe
           </Typography>
         </Box>
       </Box>
