@@ -1,3 +1,7 @@
+### This is a nft minting website with a delayed reveal feature.
+- This was built with the help of Thirdweb.
+
+(These were given by thirdweb)
 ## Getting Started
 
 Create a project using this example:
