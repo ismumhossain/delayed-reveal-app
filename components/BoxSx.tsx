@@ -42,7 +42,7 @@ export default function BoxSx() {
           margin: '5px 0',
         }}
       >
-        <a href="/all" style={{ textDecoration: 'none' }}>
+        <a href="/pages/all" style={{ textDecoration: 'none' }}>
           <Button
             variant="contained"
             sx={{ mb: 1, mt: 1, color: 'white', bgcolor: 'black', '&:hover': { bgcolor: 'grey' } }}
